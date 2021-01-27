@@ -1,0 +1,45 @@
+\subsection{Exponential Form of Complex Numbers}
+
+We define the \vocab{argument} of a complex number $z$ as the set of $\theta$ such that 
+\[ \arg{z} = \{ \theta + 2\pi n | n \in \ZZ \}, \] where $\theta$ is the \vocab{principal argument} of $z$. 
+
+Recall the following: 
+\begin{theorem}[Euler's Formula]
+For any $z = x + iy = r(\cos{\theta} + i\sin{\theta})$, we have $z = re^{i\theta}$ such that 
+\[ e^{i\theta} = \cos{\theta} + i\sin{\theta}. \] 
+
+Then all laws of exponents apply to operations with complex numbers. 
+\end{theorem}
+
+We also have the following corollary: 
+\begin{corollary*}
+For any $z \in \CC$, $\arg{zw} = \arg{z} + \arg{w}$. 
+\end{corollary*}
+It is better to understand this as for $\theta_1 \in \arg{z}$ and $\theta_2 \in \arg{w}$, $\theta_1 + \theta_2 \in \arg{zw}$. 
+
+From this it follows that $\arg{z^n} = n\arg{z}$ and that $\arg{\frac{z}{w}} = \arg{z} - \arg{w}$. 
+
+
+\subsection{Roots of Complex Numbers}
+
+We qcan derive a general form for the $n$th root of a complex number $z$: 
+\begin{proposition}
+For all $z \in \CC$, we have 
+\[ z^{\frac{1}{n}} = \{ c_k = \sqrt[n]{r_0}e^{i\varphi_k} | \varphi_k = \frac{\theta + 2\pi k}{n}, k = 0,\ldots,n-1 \} \] 
+If $\theta$ is the principal argument of $z$ ($\theta \in (-\pi, \pi]$), then 
+\[ c_0 = \sqrt[n]{r_0}e^{i\frac{\theta}{n}} \] is called the \vocab{principal $n$th root} of $z$. 
+\end{proposition}
+It is obvious that the other roots of $z$ are obtained by rotating the principal root by a factor of $\frac{2\pi}{n}$ degrees (as this is analogous to multiplying the principal root by $e^{i \frac{2\pi}{n}}$ each time). 
+
+\subsection{Roots of Unity}
+
+We can apply the above derivation to 1, as it is simply $e^{0i}$. As $\arg{1} = 2\pi k$ for some $k \in \ZZ$, the principal argument of 1 is 0. It follows quickly that $r=1$. We then have $n$ distinct roots of 1, being 
+\[ \{ c_k = e^{\frac{2\pi k}{n} i} | k = 0,\ldots,n-1 \}. \] 
+
+
+The above set $1^{\frac{1}{n}}$ has a group structure of $\ZZ_n$ with respect to multiplication, as $c_k \cdot c_l = c_m$ for some $k$ and $l$ where $m = k+l \pmod n$. 
+
+Then the primitive $n$th root $\omega_n = e^{\frac{2\pi}{n} i}$ generates the group of $n$th roots of unity: 
+\[ 1^{\frac{1}{n}} = \{ \omega_n^k | k = 0, \ldots, n-1 \}. \] 
+
+Geometrically these are important as they generate regular polygons when plotted in the complex plane. 

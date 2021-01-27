@@ -1,0 +1,31 @@
+\subsection{Topology in $\CC$}
+Analogous to $\RR$, we can define the concept of a neighborhood in $\CC$. 
+\begin{definition}
+An \vocab{$\varepsilon$-neighborhood} $\epsn \in \CC$ is an open disk such that 
+\[ \epsn = \{ z : |z - z_0| < \varepsilon \}. \] 
+
+The \vocab{deleted $\varepsilon$-neighborhood} $V^\circ_\varepsilon(z_0)$ of $z_0$ is a \emph{punctured} disk such that $0 < |z - z_0| < \varepsilon$. 
+\end{definition}
+
+Again analogous to $\RR$, we can define the major types of points and sets in $\CC$. \newline
+For a set $S \subseteq \CC$ we say that
+\begin{itemize}
+\item $z_0 \in \CC$ is an \vocab{interior point} of $S$ if there exists an $\varepsilon \geq 0$ such that $\epsn$ belongs to $S$. 
+\item $z_0 \in \CC$ is an \vocab{exterior point} of $S$ if there exists $\varepsilon > 0$ such that $\epsn$ of $z_0$ does not belong to $S$. 
+item $z_0 \in \CC$ is a \vocab{boundary point} of $S$ if for all $\varepsilon > 0$, $\epsn$ contains at least one point in $S$ and one point in $S^c$. 
+\item A set $S$ is \vocab{closed} if it contains all its boundary points, and is \vocab{open} if it does not contain \emph{any} of its boundary points. 
+\item The \vocab{closure} of $S$ is the union of $S$ with the set of its boundary points. 
+\item An open set $S$ is \vocab{connected} if for any $w,z \in S$ there exists a \vocab{polynomial line} that starts at $z$ and ends at $w$ and belongs to $S$. 
+\item A non-empty connected open subset of $S$ is called a \vocab{domain}. 
+\item A union of a domain with a subset of its boundary is called a \vocab{region}. 
+\item A set $S$ is \vocab{bounded} if it is contained inside a circle: 
+\[ \exists z_0 \in \CC, R \in \RR, \text{ such that } S \subset \{ z : |z-z_0| < R \}. \] 
+\item A point $z_0 \in \CC$ is called an \vocab{accumulation point} of a set $S$ if for all $\varepsilon > 0$ $\delepsn$ contains at least 1 point of $S$.
+\end{itemize}
+
+We finish with the following proposition: 
+\begin{proposition}
+A set $S$ is closed if and only if $S$ contains all of its accumulation points. 
+\end{proposition}
+
+
