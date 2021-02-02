@@ -8,3 +8,7 @@
 \contentsline {subsection}{\numberline {2.3}Roots of Unity}{4}{subsection.2.3}% 
 \contentsline {section}{\numberline {3}January 25, 2021 (Tuesday)}{4}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Topology in $\mathbb C$}{4}{subsection.3.1}% 
+\contentsline {section}{\numberline {4}January 27, 2021 (Thursday)}{5}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Functions and Mappings}{5}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Multivalued functions}{5}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}February 2, 2021 (Tuesday)}{6}{section.5}% 

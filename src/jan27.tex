@@ -1,0 +1,42 @@
+\subsection{Functions and Mappings}
+
+\begin{definition}
+A \vocab{function} $f: S\subset{\CC} \to \CC$ is a mapping that assigns for each $z \in S$ a complex number $w$. We write $w = f(z)$ and call $S$ the \vocab{domain of $f$}. 
+\end{definition}
+
+Note that the domain of the function $f$ need not be a domain in the sense of the topological definiton, that is it need not be a connected open subset of $\CC$. 
+
+A complex function $w = f(z)$ defines two bivariate functions on $\RR$: 
+\[ \Re{w} = u(x,y), \Im{w} = v(x,y). \] 
+
+The \vocab{image} of $f$ is the set 
+\[ \image{f} = \{ w \in \CC | \exists z \in S, w = f(z) \} . \] This has many names, such as the \vocab{codomain} of $f$, or the \vocab{image} of $S$. 
+
+\begin{definition}
+For $w \in \CC$, the \emph{set}
+\[ \{ z \in S | f(z) = w \} = f\inv (w) \] is called the \vocab{preimage} of $w$. 
+\end{definition}
+The above is also known as the \vocab{inverse image} of $w$. 
+
+Similarly to $\RR$, a function $f$ is injective if $\forall w \in \image{f}$, we have that $|\{f\inv (w)\}| = 1$. 
+
+\subsection{Multivalued functions}
+
+\begin{definition}
+A \vocab{multivalued function} $f: S \to \CC$ is one that maps \emph{more than one} value to a point $z \in S$. 
+\end{definition}
+By choose a single value from the set $\{f(z)\}$, we define a \vocab{single value branch} of $f$. 
+
+\begin{example}
+Consider $f(z) = z^{\frac{1}{n}}$. This maps $n$ values to each $z \neq 0 \in \CC$. 
+\end{example}
+Another function that should be obviously multivalued is the function $f(z) = \sqrt[n]{r} e^{\frac{i \pi \theta}{n}}$. 
+\begin{example}
+Consider the function $f(z) = z^2$. We may write this as follows: $f(z) = w = u + iv$, so we have 
+\[ 
+\begin{cases}
+u(x,y) = x^2 - y^2 \\ 
+v(x,y) = 2xy
+\end{cases} \RR^2 \to \RR^2. 
+\] 
+\end{example}<++>
